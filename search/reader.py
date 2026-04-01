@@ -4,3 +4,8 @@ def read_file(filename):
 def search_text(filename, text):
     content = read_file(filename)
     return text in content
+try:
+    content = read_file(filename)
+    return text in content
+except:
+    return False
