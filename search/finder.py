@@ -9,3 +9,6 @@ def find_files_recursive(path):
         for file in files:
             result.append(os.path.join(root, file))
     return result
+if __name__ == "__main__":
+    files = find_files(".")
+    print(files)
